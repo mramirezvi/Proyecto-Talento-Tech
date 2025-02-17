@@ -13,7 +13,6 @@ st.set_page_config(
   layout="wide"
 )
 st.title("🌳 Principal producción Agroindustrial en Colombia 🌳")
-st.print ("En esta aplicación se mostrarán los datos recolectados en el último año sobre la producción de diferentes productos agroindustriales en Colombia, y cómo estos generan empleos, además de mostrar su desempeño en exportación")
 st.sidebar.title("🔍 Opciones")
 
 # 2. Generación de Datos Aleatorios
