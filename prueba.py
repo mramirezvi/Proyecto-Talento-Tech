@@ -36,12 +36,10 @@ menu = st.sidebar.radio(
 
 # 4. Mostrar los Datos
 if menu == "Datos":
-    st.subheader("📂 Datos Generados")
-    st.dataframe(data)
-
-# Menú desplegable para filtrar
-productos = ["Café", "Cacao", "Palma de Aceite", "Banano", "Azúcar", "Aguacate", "Flores", "Leche"]
-opcion_producto = st.selectbox("Selecciona un producto:", ["Todos"] + productos)
+  # Menú desplegable para filtrar
+  productos = ["Café", "Cacao", "Palma de Aceite", "Banano", "Azúcar", "Aguacate", "Flores", "Leche"]
+  st.subheader("📂 Datos Generados")
+  opcion_producto = st.selectbox("Selecciona un producto:", ["Todos"] + productos)
 
 # Filtrar datos según la selección
 if opcion_producto == "Todos":
