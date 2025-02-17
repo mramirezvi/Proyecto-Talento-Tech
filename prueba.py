@@ -13,8 +13,8 @@ st.set_page_config(
   layout="wide"
 )
 st.title("🌳 Principal producción Agroindustrial en Colombia 🌳")
-st.subheader("En esta página se mostrarán los datos sobre los principales productos agroindustriales que se producen en Colombia. Además es útil para conocer como la producción de esta impacta positivamente en el sector económico del país")
-
+st.subheader("En esta página se mostrarán los datos sobre los principales productos agroindustriales que se producen en Colombia. Además es útil para conocer como la producción de esta impacta positivamente en el sector económico del país.")
+st.write ("En la barra que se despliega a la izquierda podrás seleccionar los datos cargados y filtrar por producto, allí estarán disponibles todos los datos necesarios.")
 # 2. Generación de Datos Aleatorios
 data = pd.DataFrame({
     "Fecha": pd.date_range(start="2024-01-01", periods=150, freq="D"),
