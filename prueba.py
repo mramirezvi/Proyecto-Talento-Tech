@@ -68,3 +68,4 @@ if menu == "Representaciones gráficas":
 
     # Mostrar el gráfico en Streamlit
     st.pyplot(fig)
+
