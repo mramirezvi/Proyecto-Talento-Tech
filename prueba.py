@@ -39,7 +39,8 @@ if menu == "Datos":
   # Menú desplegable para filtrar
   productos = ["Café", "Cacao", "Palma de Aceite", "Banano", "Azúcar", "Aguacate", "Flores", "Leche"]
   st.subheader("📂 Datos Generados")
-  opcion_producto = st.selectbox("Selecciona un producto:", ["Todos"] + productos)
+
+opcion_producto = st.selectbox("Selecciona un producto:", ["Todos"] + productos)
 
 # Filtrar datos según la selección
 if opcion_producto == "Todos":
