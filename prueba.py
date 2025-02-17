@@ -29,8 +29,8 @@ data = pd.DataFrame({
 
 # 3. Implementación de la Barra de Navegación
 menu = st.sidebar.radio(
-    "Selecciona un producto:",
-    ["Café", "Cacao", "Palma de Aceite", "Banano", "Azúcar", "Aguacate", "Flores", "Leche"]
+    "Información general:",
+    ["Datos, Fuentes, Empresas productoras, Contacto"]
 )
 
 
