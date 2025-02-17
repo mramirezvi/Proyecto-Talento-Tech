@@ -13,7 +13,7 @@ st.set_page_config(
   layout="wide"
 )
 st.title("🌳 Principal producción Agroindustrial en Colombia 🌳")
-st.sidebar.title("🔍 Opciones")
+st.subheader("Información")
 
 # 2. Generación de Datos Aleatorios
 data = pd.DataFrame({
@@ -29,9 +29,10 @@ data = pd.DataFrame({
 
 # 3. Implementación de la Barra de Navegación
 menu = st.sidebar.radio(
-    "Selecciona una opción:",
-    ["Inicio", "Datos", "Visualización", "Configuración"]
+    "Selecciona un producto:",
+    "Café", "Cacao", "Palma de Aceite", "Banano", "Azúcar", "Aguacate", "Flores", "Leche"]
 )
+
 
 # 4. Mostrar los Datos
 if menu == "Datos":
