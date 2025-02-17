@@ -40,6 +40,7 @@ if menu == "Datos":
   productos = ["Café", "Cacao", "Palma de Aceite", "Banano", "Azúcar", "Aguacate", "Flores", "Leche"]
   st.subheader("📂 Datos Generados")
 
+productos = ["Café", "Cacao", "Palma de Aceite", "Banano", "Azúcar", "Aguacate", "Flores", "Leche"]
 opcion_producto = st.selectbox("Selecciona un producto:", ["Todos"] + productos)
 
 # Filtrar datos según la selección
