@@ -30,7 +30,7 @@ data = pd.DataFrame({
 # 3. Implementación de la Barra de Navegación
 menu = st.sidebar.radio(
     "Información general:",
-    ["Datos, Fuentes, Empresas productoras, Contacto"]
+    ["Datos", "Fuentes", "Empresas productoras", "Contacto"]
 )
 
 
