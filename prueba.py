@@ -51,14 +51,19 @@ else:
 st.write(f"📌 Mostrando datos para: **{opcion_producto}**")
 st.dataframe(datos_filtrados, use_container_width=True)
 
+# Página de Representaciones gráficas
 if menu == "Representaciones gráficas":
-  # Agrupar datos por producto y sumar la producción
-  produccion_agrupada = data.groupby("Producto")["Producción (ton)"].sum().sort_values()
+    st.title("📊 Representaciones Gráficas de la Agroindustria")
+    
+    # Agrupar datos por producto y sumar la producción
+    produccion_agrupada = data.groupby("Producto")["Producción (ton)"].sum().sort_values()
 
-  # Crear gráfico de barras
-  fig, ax = plt.subplots(figsize=(10, 5))
-  ax.barh(produccion_agrupada.index, produccion_agrupada.values, color="skyblue")
-  ax.set_xlabel("Producción (ton)")
-  ax.set_ylabel("Producto")
-  ax.set_title("Producción Total por Producto")
-  st.pyplot(fig)
+    # Crear gráfico de barras
+    fig, ax = plt.subplots(figsize=(10, 5))
+    ax.barh(produccion_agrupada.index, produccion_agrupada.values, color="skyblue")
+    ax.set_xlabel("Producción (ton)")
+    ax.set_ylabel("Producto")
+    ax.set_title("Producción Total por Producto")
+
+    # Mostrar el gráfico en Streamlit
+    st.pyplot(fig)
