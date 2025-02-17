@@ -13,7 +13,7 @@ st.set_page_config(
   layout="wide"
 )
 st.title("🌳 Principal producción Agroindustrial en Colombia 🌳")
-st.subheader("Información")
+st.subheader("En esta página se mostrarán los datos sobre los principales productos agroindustriales que se producen en Colombia. Además es útil para conocer como la producción de esta impacta positivamente en el sector económico del país")
 
 # 2. Generación de Datos Aleatorios
 data = pd.DataFrame({
