@@ -33,23 +33,22 @@ menu = st.sidebar.radio(
     ["Datos", "Representaciones gráficas", "Fuentes", "Empresas productoras", "Contacto"]
 )
 
-
 # 4. Mostrar los Datos
 if menu == "Datos":
-  # Menú desplegable para filtrar
-  productos = ["Café", "Cacao", "Palma de Aceite", "Banano", "Azúcar", "Aguacate", "Flores", "Leche"]
-  st.subheader("📂 Datos Generados")
-  opcion_producto = st.selectbox("Selecciona un producto:", ["Todos"] + productos)
+    # Menú desplegable para filtrar
+    productos = ["Café", "Cacao", "Palma de Aceite", "Banano", "Azúcar", "Aguacate", "Flores", "Leche"]
+    st.subheader("📂 Datos Generados")
+    opcion_producto = st.selectbox("Selecciona un producto:", ["Todos"] + productos)
 
-# Filtrar datos según la selección
-if opcion_producto == "Todos":
-    datos_filtrados = data
-else:
-    datos_filtrados = data[data["Producto"] == opcion_producto]
+    # Filtrar datos según la selección
+    if opcion_producto == "Todos":
+        datos_filtrados = data
+    else:
+        datos_filtrados = data[data["Producto"] == opcion_producto]
 
-# Mostrar la tabla con los datos filtrados
-st.write(f"📌 Mostrando datos para: **{opcion_producto}**")
-st.dataframe(datos_filtrados, use_container_width=True)
+    # Mostrar la tabla con los datos filtrados
+    st.write(f"📌 Mostrando datos para: **{opcion_producto}**")
+    st.dataframe(datos_filtrados, use_container_width=True)
 
 # Página de Representaciones gráficas
 if menu == "Representaciones gráficas":
@@ -68,4 +67,3 @@ if menu == "Representaciones gráficas":
 
     # Mostrar el gráfico en Streamlit
     st.pyplot(fig)
-
